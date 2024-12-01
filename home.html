@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Team 02 - Home</title>
+        <link rel="stylesheet" href="styles.css">
+        <script type="text/javascript" src="logo.js"></script>
+
+        <style>
+
+            .main {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .welcoming-text {
+                width: 100%;
+                align-items: center;
+                text-align: center;
+            }
+
+            .projects-overview {
+                display: flex;
+                width: 100%;
+                text-align: center;
+                height: 80vh;
+                border: 2px solid black
+            }
+
+            .hour-of-code-project {
+                background: url("media/hour_of_code_photo.jpg");
+                width: 50%;
+            }
+
+            .hoc-text {
+                background-color: white;
+                border-radius: 25px;
+                border: 2px solid black;
+                color: black;
+                margin: 27% 20%;
+                padding: 5vh;
+            }
+
+            .web-text {
+                background-color: white;
+                border-radius: 25px;
+                border: 2px solid black;
+                color: black;
+                margin: 27% 20%;
+                padding: 5vh;
+            }
+
+            .web-project {
+                background: url("media/code_image.jpg");
+                width: 50%;
+            }
+
+            .project-link {
+                padding: 10px;
+                background-color: var(--theme-color);
+                border-radius: 25px;
+                border: 2px solid black;
+                color: black;
+                text-decoration: none;
+                transition: 0.5s;
+            }
+
+            .project-link:hover {
+                background-color: #ffbb4d;
+            }
+
+            .teammates-overview {
+                width: 100%;
+                display: flex;
+                width: 100%;
+                justify-content: center;
+                border: 2px solid black;
+                align-items: center;
+            }
+
+            .member {
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                color: white;
+                width: 25%;
+                height: 100%;
+                padding: 5vh;
+            }
+
+            .member-link {
+                background-color: white;
+                color: black;
+                border-radius: 25px;
+                border: 2px solid black;
+                padding: 1vh;
+                text-decoration: none;
+                transition: 0.5s;
+            }
+
+            .member-link:hover {
+                background-color: var(--theme-color);
+            }
+
+            .code-artist-overview {
+                background: url("media/team02-logo.png");
+                background-repeat: no-repeat;
+                width: 100%;
+                align-items: center;
+                justify-content: right;
+            }
+
+            .code-artist-text {
+                text-align: right;
+                padding-bottom: 6%;
+                padding-top: 2%;
+                padding-right: 3%;
+            }
+
+            .code-artist-link {
+                border-radius: 25px;
+                border: 2px solid black;
+                background-color: white;
+                color: black;
+                padding: 1vh;
+                text-decoration: none;
+                transition: 0.5s;
+            }
+
+            .code-artist-link:hover {
+                background-color: var(--theme-color);
+
+            }
+
+            .member-name a {
+                color: white;
+            }
+        </style>
+
+    </head>
+    <body id="body" class="dark-theme">
+
+        <header>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="team-members.html">Team Members</a></li>
+                    <li><a href="code-artist.html">Code Artist</a></li>
+                </ul>
+                <button type="button" onclick="toggleTheme()" id="btn" class=""><strong>Toggle Theme</strong></button>
+                <a href="home" class="logo"><img src="media/team02-logo.png" class="team-logo"></a>
+            </nav>
+        </header>
+
+        <section class="main">
+
+            <div class="container">
+                <div class="welcoming-text">
+                    <h1>Welcome to the website of Team 02 - "Last but not Least!"</h1>
+                    <h3>Here you will find everything you need to know about <a href="team-members.html" style="color: var(--ada-blue)">us</a>.</h3>
+                    <br>
+                    <br>
+                    <br>
+
+                </div>
+
+                <section class="projects-overview" id="projects-overview">
+                    <div class="hour-of-code-project" id="hour-of-code-project">
+                        <div class="hoc-text">
+                            <h1>Hour of Code</h1>
+                            <h3>Provided by our team to kids from <span class="azadliq">Azadliq Prospekti</span> for unraveling the "mystery" of coding!</h3>
+                            <a class="project-link" href="projects.html"><strong>Learn more!</strong></a>
+                        </div>
+                    </div>
+                    <div class="web-project" id="web-project">
+                        <div class="web-text">
+                            <h1>Web-Development Project</h1>
+                            <h3>Made by our team with love using HTML, CSS and JavaScript!</h3>
+                            <a class="project-link" href="projects.html"><strong>Learn more!</strong></a>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="teammates-overview" id="teammates-overview">
+                    <div class="member amil" style="background-color: rgb(71, 71, 71);">
+                        <div class="member-text">
+                            <h1 class="member-name"><a href="https://www.codecademy.com/profiles/amilsalahov" target="_blank">Amil Salahov</a></h1>
+                            <br>
+                            <h3>A 16 years-old programming zealot,</h3>
+                            <h3>Team-Leader of this and HoC projects,</h3>
+                            <h3>Main developer of the Code-Artist Bonus task.</h3>
+                            <a href="team-members.html" class="member-link"><strong>Learn more!</strong></a>
+                        </div>
+                    </div>
+
+                    <div class="member rufat" style="background-color: var(--ada-blue);">
+                        <div class="member-text">
+                            <h1 class="member-name"><a href="https://www.codecademy.com/profiles/RufatAhadov" target="_blank">Rufat Ahadov</a></h1>
+                            <br>
+                            <h3>An 18 years-old developing enthusiast,</h3>
+                            <h3>Developed some elements for Web project,</h3>
+                            <h3>Enjoys studying programming principles.</h3>
+                            <a href="team-members.html" class="member-link"><strong>Learn more!</strong></a>
+                        </div>
+                    </div>
+                        
+                    <div class="member nurjan" style="background-color: var(--ada-red);">
+                        <div class="member-text">
+                            <h1 class="member-name"><a href="https://www.codecademy.com/profiles/NurjanAliguluyeva" target="_blank">Nurjan Aliguluyeva</a></h1>
+                            <br>
+                            <h3>A 17 years-old Mathematics student,</h3>
+                            <h3>Photographer in HoC and developer</h3>
+                            <h3>in this project's HoC section.</h3>
+                            <a href="team-members.html" class="member-link"><strong>Learn more!</strong></a>
+                        </div>
+                    </div>
+
+                    <div class="member yusif" style="background-color: var(--theme-color);">
+                        <div class="member-text">
+                            <h1 class="member-name"><a href="https://www.codecademy.com/profiles/ymammadli23308" target="_blank">Yusif Mammadli</a></h1>
+                            <br>
+                            <h3>A 17 years-old Computer Science student,</h3>
+                            <h3>Assisted in HoC and in the Web-project,</h3>
+                            <h3>a hardworking student with clear goals.</h3>
+                            <a href="team-members.html" class="member-link"><strong>Learn more!</strong></a>
+                        </div>
+                    </div>
+                    
+                </section>
+
+                <section class="code-artist-overview">
+                    <div class="code-artist-text">
+                        <h1>Code Artist: Bonus Task</h1>
+                        <h3>Our team has developed an animation</h3>
+                        <h3>of plotting the Barnsley's Fern fractal</h3>
+                        <h3>as the code artist section of this project.</h3>
+                        <h3>You can learn about the symoblism of this fractal</h3>
+                        <h3>on the Code Artist page.</h3>
+                        <a class="code-artist-link" href="code-artist.html"><strong>Learn more!</strong></a>
+                    </div>
+                </section>
+            </div>
+
+        </section>
+           
+    </body>
+</html>

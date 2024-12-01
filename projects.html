@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Team 02 - Projects</title>
+        <link rel="stylesheet" href="styles.css">
+        <script type="text/javascript" src="logo.js"></script>
+
+        <style>
+
+            .container {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .proj {
+                background-color: var(--ada-red);
+                width: 100%;
+                color: white;
+                font-size: x-large;
+            }
+
+            .proj2 {
+                background-color: var(--ada-blue);
+            }
+
+            .title {
+                text-align: center;
+                font-size: xx-large;
+            }
+
+            .proj-body {
+                display: flex;
+                width: 100%;
+                align-items: center;
+            }
+
+            .body-text {
+                margin-left: 3%;
+            }
+
+            .insta-post {
+                position: absolute;
+                right: 2%;
+                justify-content: right;
+                align-items: center;
+            }
+
+            pre {
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            }
+
+        </style>
+
+    </head>
+    <body id="body" class="dark-theme">
+
+        <header>
+            <nav class="navbar">  
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="team-members.html">Team Members</a></li>
+                    <li><a href="code-artist.html">Code Artist</a></li>
+                </ul>
+                <button type="button" onclick="toggleTheme()" id="btn" class=""><strong>Toggle Theme</strong></button>
+                </script>
+                <a href="home" class="logo"><img src="media/team02-logo.png" class="team-logo"></a>
+            </nav>
+        </header>
+
+        <section class="container">
+
+            <section class="proj" id="proj">
+                <div class="title">
+                    <h1>Hour of Code</h1>
+                </div>
+                <div class="proj-body">
+                    <div class="body-text">
+                        <h3>Details of the project:</h2>
+                        <ul>
+                            <li><strong>Date & Time: </strong>November 8th, 15:00</li>
+                            <li><strong>Place: </strong>"WorkLab" Coworking Center</li>
+                            <li><strong>Participants: </strong>9 kids from Nasimi district, Azadliq</li>
+                        </ul>
+
+                        <h3>Work distribution:</h3>
+                        <ul>
+                            <li><strong>Amil Salahov: </strong>Team Leader, organized participants, booked venue, helped with the report</li>
+                            <li><strong>Rufat Ahadov: </strong>Main instructor, provided presentation, and helped with the report</li>
+                            <li><strong>Yusif Mammadli: </strong>Assistant teacher, helped participants and assisted Rufat</li>
+                            <li><strong>Nurjan Aliguluyeva: </strong>Photographer, videographer, assistant teacher, helped with the report</li>
+                        </ul>
+
+                        <h3>Preparation steps:</h3>
+                        <ol>
+                            <li>Created agenda for the event.</li>
+                            <li>Developed a QR code for the maze exercise on code.org.</li>
+                            <li>Designed a clear teaching procedure for the exercise.</li>
+                            <li>Prepared a presentation about ADA University.</li>
+                            <li>Printed participation certificates for attendees.</li>
+                            <li>Set up all systems at the venue before the event.</li>
+                        </ol>
+
+                        <h3>More details:</h3>
+                        <pre>Initially, our team expected to have over 20 participants in this event. however, due to some unanticipated
+circumstances, this did not happen, and only 9 kids were able to participate. The event went well, we started
+by giving brief introduction into how do algorithms work, then went through each level of code.org's "Maze"
+course, and wrapped up by giving innoductory presentation about ADA University and distributing the certificates.
+We have received a lot of positive feedback from the event! You can see the highlights in the Instagram post on the right.</pre>
+                    </div>
+
+                    <div class="insta-post">
+                        <iframe src="https://www.instagram.com/p/DCMqr22NtVo/embed" height="600" width="300"></iframe>
+                    </div>
+                </div>
+            </section>
+
+            <section class="proj proj2" id="proj">
+                <div class="title">
+                    <h1>WebDev Project</h1>
+                </div>
+                <div class="proj-body">
+                    <div class="body-text">
+                        <h3>Details of the project:</h2>
+                        <ul>
+                            <li><strong>Used Tech Stack: </strong>HTML, CSS and JavaScript</li>
+                            <li><strong>Topic: </strong>Team 02 - Last but not Least</li>
+                        </ul>
+
+                        <h3>Work distribution:</h3>
+                        <ul>
+                            <li><strong>Amil Salahov: </strong>Team Leader, bonus task, navigation bar and the home page</li>
+                            <li><strong>Rufat Ahadov: </strong>Created navigation bar backbone, helped debugging</li>
+                            <li><strong>Yusif Mammadli: </strong>Assisted to create the team-members page</li>
+                            <li><strong>Nurjan Aliguluyeva: </strong>Created the hour of code section</li>
+                        </ul>
+
+                        <h3>Preparation steps:</h3>
+                        <ol>
+                            <li>Created agenda for the event.</li>
+                            <li>Developed a QR code for the maze exercise on code.org.</li>
+                            <li>Designed a clear teaching procedure for the exercise.</li>
+                            <li>Prepared a presentation about ADA University.</li>
+                            <li>Printed participation certificates for attendees.</li>
+                            <li>Set up all systems at the venue before the event.</li>
+                        </ol>
+
+                        <h3>More details:</h3>
+                        <pre>We have started by analyzing the content of the files that were provided in the repository by Professor.
+After we were done analyzing, we decided to distribute the workload, and only then we have
+initiated the workflow. We managed to maintain a stable commit amount every day, which was
+2-3 commits per day on average. Before doing the content of the pages, it was decided to
+develop the navigation bar. In the meanwhile, the code-artist project was in development
+paralelly. You can see the highlights from development in the Instagram post on the right.
+                        </pre>
+                    </div>
+
+                    <div class="insta-post">
+                        <iframe src="https://www.instagram.com/p/DDC8uehNahO/embed" height="600" width="300"></iframe>
+                    </div>
+                </div>
+            </section>
+
+        </section>
+           
+    </body>
+</html>

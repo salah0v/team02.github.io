@@ -1,0 +1,94 @@
+:root {
+    --ada-blue: #336178;
+    --ada-red: #ae485e;
+    --ada-red-light: #d15670;
+    --theme-color: #fc9d06;
+}
+
+body {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background: whitesmoke;
+    color: black;
+    min-height: 100vh;
+}
+
+.canvas {
+    padding: 20px;
+}
+
+canvas {
+    border: solid 2px black;
+}
+
+header {
+    background-color: var(--ada-blue);
+    color: white;
+    min-height: 12%;
+    width: 100%;
+    position: relative;
+}
+
+.team-logo {
+    width: 140px;
+    margin-right: 5%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.logo {
+    width: 140px;
+    margin-right: 5%;
+    cursor: pointer;
+}
+
+nav {
+    align-items: center;
+    display: flex;
+}
+
+nav ul {
+    text-align: left;
+    flex: 1;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 5%;
+    display: inline-block;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+nav ul li a:hover {
+    color: var(--theme-color);
+}
+
+nav button {
+    background-color: white;
+    padding: 15px 15px;
+    border-radius: 25px;
+    margin: 0 5%;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+nav button:hover {
+    background-color: var(--theme-color);
+    color: white
+}
+
+.dark-theme {
+    color: white;
+    background-color: rgb(32, 32, 32);
+}
+
+.btn-dark {
+    background-color: rgb(32, 32, 32);
+    color: white;
+    border: 1px solid white;
+}

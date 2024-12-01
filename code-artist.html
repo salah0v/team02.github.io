@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Team 02 - Code Art</title>
+    <link rel="stylesheet" href="styles.css">  
+    <script type="text/javascript" src="scripts.js"></script>
+    <script type="text/javascript" src="logo.js"></script>
+
+    <style>
+        :root {
+            --ada-blue: #336178;
+            --ada-red: #ae485e;
+            --ada-red-light: #d15670;
+            --theme-color: #fc9d06;
+        }
+
+        body {
+            overflow-y: hidden;
+        }
+
+        .canvas button {
+            background-color: var(--ada-blue);
+            padding: 15px;
+            border-radius: 25px;
+            color: white;
+        }
+
+        .canvas-dark {
+            border: 2px solid white;
+        }
+
+        .buttons {
+            margin-bottom: 2vh;
+        }
+
+        .code-artist {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .text {
+            align-items: self-end;
+            text-align: right;
+            
+        }
+
+        .text h3 a {
+            color: var(--ada-blue);
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .math {
+            color: var(--theme-color);
+        }
+
+        code {
+            background-color: rgb(212, 212, 212);
+            padding: 2px;
+            border-radius: 6px;
+            border: solid 1px grey;
+            color: black;
+        }
+    </style>
+</head>
+<body id="body" class="dark-theme">
+        <header>
+            <nav class="navbar">  
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="team-members.html">Team Members</a></li>
+                    <li><a href="code-artist.html">Code Artist</a></li>
+                </ul>
+                <button type="button" onclick="toggleTheme()" id="btn" class=""><strong>Toggle Theme</strong></button>
+                <a href="home" class="logo"><img src="media/team02-logo.png" class="team-logo"></a>
+            </nav>
+        </header>
+
+    <br>
+    
+    <div class="code-artist">
+        <div class="text">
+            <h1>Barnsley's Fern,</h1>
+            <h3>also knows as Barnsley's Fractal. We chose this mathematical shape to be the symbol</h3>
+            <h3>and the code-artist project of our team, as it resembles perfectly the name of our team.</h3>
+            <h3>Because the name of our team is "Last but not Least", and the idea of a fractal is that</h3>
+            <h3>it is an infinite shape, the "Last" point drawn on the canvas cannot be the "Least", as</h3>
+            <h3>there can always be one more leaflet of the fern drawn after this "Least" point.</h3>
+            <br>
+            <h1>How does the fern work?</h1>
+            <h3>Barnsley's Fern is a fractal which resembles a fern, where each leaflet is a smaller</h3>
+            <h3>version of the entire fern, and thus this shape can be drawn to infinity. This fractal</h3>
+            <h3>was described in Michael Barnsley's book "Fractals Everywhere". Thorough mathematical</h3>
+            <h3>explanation/formula of it being formed can be found in the <code>scripts.js</code> file in the repository</h3>
+            <h3>of this project or <a href="https://en.wikipedia.org/wiki/Barnsley_fern" target="_blank">here</a>.</h3>
+            <h3>Thank you for your attention and enjoy watching the beauty of <span class="math">Math</span>!</h3>
+            <h5>P.S you can draw on this canvas too in case you want to emphasize a certain leaflet. Good luck!</h3>
+        </div>
+        <div class="canvas" style="text-align:center">
+            <div class="buttons">
+                <button type="button" onclick="reset(context, canvas)">Reset the drawing</button>
+                <button type="button" onclick="drawFern(context, canvas)" id="drawFern">Draw the Barnsley's Fern</button>
+            </div>
+            <canvas id="art-canvas" width="640" height="550">
+                Sorry ... your browser doesn't support the HTML5 canvas element.
+            </canvas>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        const canvas = document.getElementById("art-canvas");
+        const context = canvas.getContext("2d");
+
+        const reset = (context, canvas) => {
+            context.fillStyle = 'white'; 
+            context.clearRect(0, 0, canvas.width, canvas.height);
+            context.fillRect(0, 0, canvas.width, canvas.height);
+        }
+
+        const drawFern = (context, canvas) => {
+            barnsleysFern(context, canvas, 100);
+
+            const btn = document.getElementById("drawFern");
+            btn.classList.toggle("hidden");
+        }
+    </script>
+</body>
+</html>

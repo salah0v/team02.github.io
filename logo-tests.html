@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Homework 3: Programming art</title>
+        <script type="text/javascript" src="logo.js"></script>
+        <script type="text/javascript" src="scripts.js"></script>
+
+        <style>
+            :root {
+                --ada-blue: #336178;
+                --ada-red: #ae485e;
+                --ada-red-light: #d15670;
+                --theme-color: #fc9d06;
+                --underline-height: .25em;
+                --transition-duration : .5s;
+            }
+            
+            body {
+                font-family: system-ui, sans-serif;
+                background: whitesmoke;
+                min-height: 100vh;
+            }
+
+            nav {
+                position: relative;
+                white-space: nowrap;
+                background: white;
+                padding: var(--underline-height) 0;
+                margin: 2em 0;
+                box-shadow: 0 1em 2em rgba(black, .05);
+            }
+
+            .underline {
+                display: block;
+                position: absolute;
+                z-index: 0;
+                bottom: 0;
+                left: 0;
+                height: var(--underline-height);
+                width: 20%;
+                background: black;
+                pointer-events: none;
+                mix-blend-mode: multiply;
+                transition: transform var(--transition-duration) ease-in-out;
+            }
+
+            a {
+                display: inline-block;
+                z-index: 10;
+                width: 20%;
+                padding: 1em 0;
+                text-align: center;
+                cursor: pointer;
+            }
+
+            nav.black {
+                .underline {
+                    background: #222;
+                    border-radius: .25em;
+                    height: calc(var(--underline-height));
+                    mix-blend-mode: initial;
+                }
+            }
+
+        </style>
+
+    </head>
+    <body>
+
+        <script type="text/javascript">
+            const ul = (index) => {
+                console.log('click!' + index)
+                
+                var underlines = document.querySelectorAll(".underline");
+
+                for (var i = 0; i < underlines.length; i++) {
+                    underlines[i].style.transform = 'translate3d(' + index * 100 + '%,0,0)';
+                }
+            }
+        </script>
+
+        <nav class="black">
+            <div class="underline"></div>
+            <a onClick="ul(0)" href="home.html">Home</a>
+            <a onClick="ul(1)" href="projects.html">Projects</a>
+            <a onClick="ul(2)" href="#">Team Members</a>
+            <a onClick="ul(3)" href="code-artist.html">Code Artist</a>
+        </nav>
+           
+    </body>
+</html>
